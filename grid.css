@@ -1,0 +1,46 @@
+.container{
+    display:grid;
+    grid-template-areas:
+    "header header header"
+
+    "sidebar content ads"
+
+    "footer footer footer";
+
+    grid-template-columns: 150px 1fr 150px;
+
+    grid-template-rows: 50px 200px 50px;
+
+    gap: 5px;
+}
+.header{
+    grid-area: "header";
+    background-color: lightblue;
+    text-align: center;
+    padding: 20px;
+}
+.sidebar{
+    grid-area: "sidebar";
+    background-color: cadetblue;
+    text-align: left;
+    padding: 20px;
+
+}
+.content{
+    grid-area:"content";
+    background-color: beige;
+    text-align: center;
+    padding: 20px;
+}
+.ads{
+    grid-area: "ads";
+    background-color: rgb(75, 242, 248);
+    text-align: right;
+    padding: 20px;
+}
+.footer{
+    grid-column:"footer";
+    background-color: rgb(203, 149, 80);
+    text-align: center;
+    padding: 20px;
+}
